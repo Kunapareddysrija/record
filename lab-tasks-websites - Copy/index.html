@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Tasks Record</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PROFILE -->
+<div class="profile-container">
+  <img src="assets/profile.jpeg" alt="Profile">
+  <p>238W1A12G1<br>K. Srija</p>
+</div>
+
+<h1>Lab Tasks & Outputs</h1>
+
+<!-- ADD WEEK -->
+<div class="card">
+  <h2>Add Week</h2>
+  <input type="text" id="weekName" placeholder="Week 1">
+  <button onclick="addWeek()">Add Week</button>
+</div>
+
+<!-- ADD TASK -->
+<div class="card">
+  <h2>Add Task</h2>
+
+  <select id="weekSelect">
+    <option value="">Select Week</option>
+  </select>
+
+  <input type="text" id="taskName" placeholder="Task 1">
+
+  <input type="text" id="codeUrl" placeholder="Source Code URL">
+
+  <input type="file" id="outputImage" accept="image/*">
+
+  <button onclick="addTask()">Add Task</button>
+</div>
+
+<!-- DISPLAY AREA -->
+<div id="display"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

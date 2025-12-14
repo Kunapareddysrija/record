@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  padding: 20px;
+}
+
+/* ================= PROFILE ================= */
+.profile-container {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a90e2;
+}
+
+.profile-text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.profile-text span {
+  color: #555;
+}
+
+.profile-text strong {
+  display: block;
+  font-size: 15px;
+  color: #222;
+}
+
+/* ================= HEADING ================= */
+h1 {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: #ffffff;
+  max-width: 520px;
+  margin: 20px auto;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #4a90e2;
+}
+
+/* ================= INPUTS ================= */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* ================= BUTTON ================= */
+button {
+  width: 100%;
+  padding: 11px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* ================= DISPLAY ================= */
+#display {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* ================= OUTPUT CARD ================= */
+.output-card {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.output-card h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.output-card p {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* ================= LONG LINK FIX ================= */
+.output-card a {
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.output-card a:hover {
+  text-decoration: underline;
+}
+
+/* ================= IMAGE OUTPUT ================= */
+.output-card img {
+  width: 100%;
+  max-height: 420px;
+  margin-top: 12px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .profile-container {
+    position: static;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    margin-top: 20px;
+  }
+}
